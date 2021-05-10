@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Media;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
@@ -144,6 +145,7 @@ namespace WinFormsApp2
         private void txtCenterMatched_TextChanged(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Normal;
+            SystemSounds.Beep.Play();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
