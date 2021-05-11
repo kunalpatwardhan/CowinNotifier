@@ -70,7 +70,7 @@ namespace WinFormsApp2
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 29);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Start";
+            this.button1.Text = "Refresh";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -183,6 +183,7 @@ namespace WinFormsApp2
             this.txtKey.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtKey.Size = new System.Drawing.Size(200, 341);
             this.txtKey.TabIndex = 1;
+            this.txtKey.TextChanged += new System.EventHandler(this.txtKey_TextChanged);
             // 
             // txtValue
             // 
@@ -193,6 +194,7 @@ namespace WinFormsApp2
             this.txtValue.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtValue.Size = new System.Drawing.Size(196, 341);
             this.txtValue.TabIndex = 1;
+            this.txtValue.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
             // 
             // tabControl1
             // 
