@@ -24,14 +24,14 @@ namespace WinFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //WebRequest request = WebRequest.Create("https://www.cowin.gov.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=363&date=11-05-2021");
+            //WebRequest request = WebRequest.Create("https://www.cowin.gov.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=363&" + DateTime.Now.ToString("MM/dd/yyyy"));	//date=11-05-2021");
             //WebResponse response = request.GetResponse();
             timer1.Start();
 
             try
             {
                 string urlToCheck = "";
-                HttpWebRequest request = HttpWebRequest.Create("https://www.cowin.gov.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=363&date=11-05-2021") as HttpWebRequest;
+                HttpWebRequest request = HttpWebRequest.Create("https://www.cowin.gov.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=363&date=" + DateTime.Now.ToString("dd-MM-yyyy")) as HttpWebRequest; //11 -05-2021") 
                 request.Method = "GET";
                 /* Sart browser signature */
                 request.UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0";
